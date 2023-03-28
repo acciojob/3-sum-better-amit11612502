@@ -6,15 +6,18 @@ function threeSum(arr, target) {
 	for(let i=0;i<arr.length;i++){
 		for(let j=i+1;j<arr.length;j++){
 			for(let k=j+1;k<arr.length;k++){
-				let min=arr[i]+arr[j]+arr[k];
-				if(Math.abs(sum-target)<=min){
-					min= Math.abs(sum-target);
-					ans=sum;
-				}
+			if (Math.abs(target - min) >Math.abs(target - (arr[i] + arr[j] + arr[k])))
+				
+min = (arr[i] + arr[j] + arr[k]);
+
+				
+					
+					
+				
 			}
 		}
 	}
-	return ans;
+	return min;
 }
 
 module.exports = threeSum;
